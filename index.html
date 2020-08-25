@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Elise Cunniet-Robert" />
+    <meta name="description" content="Fred Skitty - Belonging to the night. Premier EP disponible.">
+    <meta property="og:title" content="Fred Skitty" />
+    <meta property="og:site_name" content="Fred Skitty" />
+    <meta property="og:description" content="Fred Skitty - Belonging to the night. Premier EP disponible." />
+    <meta property="og:url" content="https://www.fredskitty.com" />
+    <meta property="og:image" content="https://fredskitty.com/img/fredskitty.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="630" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@fredskitty" />
+    <meta name="twitter:title" content="Fred Skitty" />
+    <meta name="twitter:description" content="Fred Skitty - Belonging to the night. Premier EP disponible." />
+    <meta name="twitter:image" content="https://fredskitty.com/img/fredskitty.jpg" />
+    <title>Fred Skitty</title>
+    <link
+      rel="icon"
+      href="img/icon.png"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- import the webpage's javascript file -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a href="https://www.facebook.com/FredSkitty/"
+            ><img
+              src="img/logo/fb_logo.png"
+          /></a>
+          <a href="https://www.instagram.com/fredskitty/"
+            ><img
+              src="img/logo/insta_logo.png"
+          /></a>
+          <a href="https://twitter.com/fredskitty7"
+            ><img
+              src="img/logo/twitter_logo.png"
+          /></a>
+          <a href="https://www.youtube.com/user/FredSkitty777"
+            ><img
+              src="img/logo/yt_logo.png"
+          /></a>
+          <a href="https://fredskitty.bandcamp.com/album/belonging-to-the-night"
+            ><img
+              src="img/logo/bc_logo.png"
+          /></a>
+          <a href="https://open.spotify.com/artist/5icgurqndlJVHs13yf2zIG"
+            ><img
+              src="img/logo/spotify_logo.png"
+          /></a>
+        </div>
+        <div class="nav-right">
+          <a href="https://difymusic.com/fredskitty">Boutique</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="first-container">
+        <div class="info-container mark1">
+          <p class="ep-dispo">Premier EP disponible</p>
+          <h1 class="artist-name">FRED SKITTY</h1>
+          <h2 class="ep-name">BELONGING TO THE NIGHT</h2>
+          <button class="listen-now" onclick="showVideo('EP')">
+            Écouter maintenant
+          </button>
+          <button class="last-clip" onclick="showVideo('clip')">
+            Découvrir le dernier clip
+          </button>
+        </div>
+        <div class="ep-cover mark1">
+          <img
+            src="img/fredskitty.jpg"
+          />
+        </div>
+      </div>
+      <div class="not-there fadeout modal">
+        <span class="close" onclick="reveal('close')">&times;</span>
+        <p>S'abonner à la newsletter</p>
+        <div id="mc_embed_signup" class="newsletter-modal">
+          <form
+            action="https://gmail.us17.list-manage.com/subscribe/post?u=5c2be5abe76a569708c01e96f&amp;id=e55ce97f1d"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <div id="mc_embed_signup_scroll">
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                class="email"
+                id="mce-EMAIL"
+                placeholder="Votre adresse email"
+                required
+              />
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div
+                style="position: absolute; left: -5000px; bottom: 0;"
+                aria-hidden="true"
+              >
+                <input
+                  type="text"
+                  name="b_5c2be5abe76a569708c01e96f_e55ce97f1d"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div class="clear">
+                <input
+                  type="submit"
+                  value=""
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="video-container not-there mark2 fadeout">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/RvUFk9e43jo"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <button class="return" onclick="showVideo('return1')">
+        Retour
+      </button>
+    </div>
+    <div class="video-container not-there mark3 fadeout">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/18QOyUGuFtI"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <button class="return" onclick="showVideo('return2')">
+        Retour
+      </button>
+    </div>
+    <footer>
+      <div class="ft-container">
+        <a
+          class="presskit"
+          href="download/presskit.txt"
+          download="Press-kit_FredSkitty"
+          >Press Kit</a
+        >
+      </div>
+      <div class="ft-container" id="contact">
+        <a href="mailto:contact@fredskitty.com" class="contact_mail"
+          >contact@fredskitty.com</a
+        >
+      </div>
+      <div class="ft-container">
+        <a id="news-button" class="there1" onclick="reveal('newsletter')"
+          >Newsletter</a
+        >
+      </div>
+      <a style="display:none;" href="https://www.freepik.com/photos/background"
+        >Background photo created by freepik - www.freepik.com</a
+      >
+    </footer>
+  </body>
+</html>
